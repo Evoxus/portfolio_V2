@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.sbs-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav {
+    height: 40px;
+    display: flex;
+    background-color: rgb(92, 92, 92);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    margin: 0;
+    height: 40px;
+    width: 100vw;
+}
+
+nav button {
+    float: right;
+}
+
+nav li {
+    margin: 0;
+    list-style: none;
+    display: none;
+}
+
+section {
+    min-height: 100px;
+    padding: 6% 0;
+    background-color: rgb(161, 161, 161);
+}
+
+section:nth-child(even) {
+    background-color: rgb(92, 92, 92);
+}
+
+.contact-info {
+    background-color: rgb(200, 200, 200);
+    min-width: 40%;
+}
+
+.bio {
+    background-color: rgb(200, 200, 200);
+    max-width: 40%;
+}
+
+.tech-stack {
+    min-width: 40%;
+    background-color: rgb(200, 200, 200);
+
+}
+
+.left-project-info {
+    min-width: 49%;
+}
+
+.right-project-info {
+    min-width: 49%;
+}
+
+.project-card {
+    margin: 15px;
+    background-color: rgb(200, 200, 200);
+    border: 1px solid black;
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(161, 161, 161);
+}
+@media only screen and (min-device-width : 768px) {
+    nav {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    nav div {
+        margin-top: 10px;
+    }
+    nav li {
+        display: flex;
+        float: right;
+        margin: 10px;
+    }
+    nav button {
+        display: none;
+    }
+    section {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .projects {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .project-card {
+        min-width: 40%;
+    }
+}
