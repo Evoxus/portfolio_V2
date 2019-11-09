@@ -5,13 +5,16 @@ html {
 a {
     color: #AAA;
     text-decoration: none;
+    transition-duration: 100ms;
 }
 
 a:hover {
+    transition-duration: 100ms;
     color: #A63A00;
 }
 
 a:active {
+    transition-duration: 100ms;
     color: #FF5F09;
 }
 
