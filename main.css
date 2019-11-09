@@ -58,12 +58,15 @@ nav ul {
 nav button {
     float: right;
     background-color: #0572B3;
-	border-radius: 7px;
-	border: 1px solid #003546;
+    border: none;
 	cursor:pointer;
 	color: #AAA;
 	padding: 10px 14px;
     text-decoration: none;
+}
+
+nav button:active {
+    color: #FF5900;
 }
 
 nav li {
