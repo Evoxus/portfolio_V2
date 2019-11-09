@@ -43,6 +43,17 @@ nav {
     margin-bottom: 10px;
 }
 
+.menu-toggle {
+    float: right;
+    background-color: #0572B3;
+    border: none;
+	cursor: pointer;
+	color: #AAA;
+	padding: 10px 14px;
+    text-decoration: none;
+    background: rgba(52, 58, 64, 0.5);
+}
+
 nav div {
     font-family: 'Unica One', cursive;
     color: #FF5900;
@@ -53,16 +64,6 @@ nav ul {
     margin: 0;
     height: 40px;
     width: 100vw;
-}
-
-nav button {
-    float: right;
-    background-color: #0572B3;
-    border: none;
-	cursor:pointer;
-	color: #AAA;
-	padding: 10px 14px;
-    text-decoration: none;
 }
 
 nav button:active {
@@ -182,13 +183,46 @@ section {
 
 footer {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 footer div a {
     margin: 10px;
     text-shadow: 1px 1px 2px black;
 }
+
+.scroll-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgba(3, 68,106, 0.5);
+    line-height: 45px;
+    border-radius: 7px;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+    color: white;
+}
+
+.scroll-to-top:hover {
+    background: rgba(4, 87, 137, 0.5);
+}
+
+.scroll-to-top i {
+    font-weight: 800;
+}
+
 @media only screen and (min-device-width : 768px) {
+    body {
+        font-size: 20px;
+        line-height: 1.6em;
+    }
     nav {
         padding-right: 6%;
         padding-left: 6%;
@@ -206,6 +240,9 @@ footer div a {
     section {
         margin-right: 5%;
         margin-left: 5%;
+    }
+    h4 {
+        font-size: 1.25em;
     }
     .sbs-container-main {
         flex-direction: row;

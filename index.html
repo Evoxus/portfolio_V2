@@ -14,14 +14,18 @@
     <title>Portfolio</title>
 </head>
 
-<body>
+<body id="page-top">
     <header>
         <nav>
             <div>MHP</div>
-            <ul>
-                <button><i class="fa fa-bars" aria-hidden="true"></i></button>
-                <li>PROJECTS</li>
-                <li>CONTACT</li>
+            <ul id="sidebar">
+                <button class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <li>
+                    <a class="js-scroll-trigger" href="#projects">PROJECTS</a>
+                </li>
+                <li>
+                    <a class="js-scroll-trigger" href="#contact">CONTACT</a>
+                </li>
             </ul>
 
         </nav>
@@ -79,7 +83,7 @@
                 <a href="https://sass-lang.com/"><i class="fab fa-sass fa-4x"></i></a>
             </div>
         </section>
-        <section>
+        <section id="projects">
             <h2 id="projects-title" class="title">PROJECTS</h2>
             <div class="projects">
                 <div class="project-card" id="quiz-app">
@@ -115,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer id="contact">
             <a href="mailto:michael@michaelhploughman.com">Email me at: michael@michaelhploughman.com</a>
             <div>
                 <p>Or check out some of my social media</p>
@@ -124,9 +128,15 @@
                 <a href="https://twitter.com/MichaelHP42"><i class="fab fa-twitter-square fa-2x"></i></a>
             </div>
         </footer>
+        <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- jQuery easing plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="index.js"></script>
 </body>
 
