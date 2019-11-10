@@ -43,6 +43,11 @@ nav {
     margin-bottom: 10px;
 }
 
+#brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 .menu-toggle {
     float: right;
     background-color: #0572B3;
@@ -52,6 +57,7 @@ nav {
 	padding: 10px 14px;
     text-decoration: none;
     background: rgba(52, 58, 64, 0.5);
+    height: 40px;
 }
 
 nav div {

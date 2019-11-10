@@ -15,23 +15,6 @@ function smoothScroll() {
   });
 }
 
-function menuToggle() {
-  $(".menu-toggle").click(function (e) {
-    e.preventDefault();
-    $("#sidebar").toggleClass("active");
-    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
-    $(this).toggleClass("active");
-  });
-}
-
-function menuClose() {
-  $('#sidebar .js-scroll-trigger').click(function () {
-    $("#sidebar").removeClass("active");
-    $(".menu-toggle").removeClass("active");
-    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
-  });
-}
-
 function scrollToTop() {
   $(document).scroll(function () {
     let scrollDistance = $(this).scrollTop();
@@ -45,7 +28,5 @@ function scrollToTop() {
 
 $(function() {
   smoothScroll();
-  menuToggle();
-  menuClose();
   scrollToTop();
 });
