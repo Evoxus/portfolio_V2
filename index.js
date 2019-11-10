@@ -33,6 +33,7 @@ function menuToggle() {
 }
 
 $(function() {
+  // document.cookie = 'cross-site-cookie=http://cloudflare.com/; SameSite=None; Secure';
   smoothScroll();
   scrollToTop();
   menuToggle();
