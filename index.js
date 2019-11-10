@@ -26,7 +26,14 @@ function scrollToTop() {
   });
 }
 
+function menuToggle() {
+  $('button').on('click', function(e){
+    $('nav').children('ul').slideToggle(500);
+  })
+}
+
 $(function() {
   smoothScroll();
   scrollToTop();
+  menuToggle();
 });
