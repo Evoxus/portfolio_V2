@@ -160,8 +160,21 @@ section {
     min-height: 300px;
 }
 
+.project-title {
+    font-size: 1.25em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .project-card img {
     border: 1px solid #383838;
+    border-radius: 3px;
+    width: 100%;
+    transition-duration: 200ms;
+}
+.project-card img:hover {
+    transform: scale(1.5) translate(35px);
+    transition-duration: 200ms;
 }
 
 .project-card p {
